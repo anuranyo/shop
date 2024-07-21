@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(135deg, #E2DE80, #FFB5D9);
+}
+
+.blend-image {
+    position: absolute;
+    transform: rotate(45deg);
+    mix-blend-mode: multiply;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-slide {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-slide img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
